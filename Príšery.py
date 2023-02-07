@@ -1,4 +1,3 @@
-
 import random
 cage = []
 
@@ -41,15 +40,15 @@ for mnozenie in range(100):
     for prišera in cage[0:5]:
         for i in range(5):
             čísla = [0,1,2,3,4]
-            muta = []
+            mutant_1 = []
             otec = random.choice(čísla)
             mama = random.choice(čísla)
             if mama == otec:
                 mama = random.choice(čísla)
-            mutan = random.randrange(0,101)
-            if mutan <13:
-                muta.append(random.randrange(0,10))
-            dna = [mama, otec, muta]
+            pravdep_mutant = random.randrange(0,101)
+            if pravdep_mutant <13:
+                mutant_1.append(random.randrange(0,10))
+            dna = [mama, otec, mutant_1]
             dieta = []
             dieta.append(random.choice(dna))
             cage.append(dieta)
